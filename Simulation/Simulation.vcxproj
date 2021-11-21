@@ -145,10 +145,14 @@
     <ClCompile Include="src\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< Updated upstream
     <ClInclude Include="src\cCoord.h" />
     <ClInclude Include="src\cmpkt.h" />
     <ClInclude Include="src\cConnection.h" />
     <ClInclude Include="src\cSpecimen.h" />
+=======
+    <ClInclude Include="vector.h" />
+>>>>>>> Stashed changes
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
