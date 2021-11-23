@@ -1,15 +1,13 @@
 ﻿#pragma once
 #include <string>
 
-#include "cmpkt.h"
-
 struct cConnection
 {
     char StartNode;
     char EndNode;
-    float Weight;
+    short Weight;
 
-    cConnection(char startNode, char endNode, float weight) : StartNode(startNode), EndNode(endNode), Weight(weight){}
+    cConnection(char startNode, char endNode, short weight) : StartNode(startNode), EndNode(endNode), Weight(weight){}
 
-    std::string Serialize();
+    std::string Serialize() const;
 };

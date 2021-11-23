@@ -1,17 +1,16 @@
 #include <iostream>
-#include "../vector.h"
+#include "cSpecimen.h"
 
-int main()
+int main(const int argc, char **argv)
 {
-    std::cout << "Gello, World!" << std::endl;
+	for (int i = 0; i < argc; i++)
+	{
+		std::cout << argv[i] << std::endl;
+	}
+	
+	cSpecimen specimen = {cCoord(123, 134), {cConnection('a', 'b', 24930), cConnection('b', 'c', 25930)}};
 
-    cVecotor3F createTest1{};
-    cVecotor3F createTest2(2, 3, 4);
-    cVecotor3F createTest3(8);
+	std::cout << specimen.Genome[0].Serialize() << std::endl;
 
-    cVecotor3F copyTest = createTest2;
-    
-    cVecotor3F moveTest = std::move(createTest3);
-    
-    return 0;
+	return 0;
 }
